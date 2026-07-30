@@ -1,4 +1,4 @@
-## 0. Setup — sample schema & data
+## 0. Setup — sample schema & data 
 
 ```sql
 DROP DATABASE IF EXISTS practice;
