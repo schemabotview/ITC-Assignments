@@ -41,7 +41,7 @@ pipeline {
                 sh '''
                     echo "=== Submitting ${JOB_TYPE} to YARN on Cloudera master ==="
                     ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${CLOUDERA_HOST} "
-                        export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+                        export JAVA_HOME=/usr/lib/jvm/java-11
                         export HADOOP_CONF_DIR=/etc/hadoop/conf
                         export SPARK_CONF_DIR=/etc/spark/conf
                         export PYSPARK_PYTHON=/usr/bin/python3
