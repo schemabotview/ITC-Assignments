@@ -25,6 +25,21 @@ pipeline {
             }
         }
 
+        stage('Unit Tests') {
+            steps {
+                sh '''
+                    echo "=== Running capstone transform unit tests on Cloudera ==="
+                    ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${CLOUDERA_HOST} \
+                        "rm -rf /tmp/ganesh/capstone_ci && mkdir -p /tmp/ganesh/capstone_ci"
+                    scp -i ${SSH_KEY} -o StrictHostKeyChecking=no -r \
+                        capstone conftest.py \
+                        ${CLOUDERA_HOST}:/tmp/ganesh/capstone_ci/
+                    ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${CLOUDERA_HOST} \
+                        "bash /tmp/ganesh/capstone_ci/capstone/run_ci_tests.sh"
+                '''
+            }
+        }
+
         stage('Copy Script to Cloudera') {
             steps {
                 sh '''
