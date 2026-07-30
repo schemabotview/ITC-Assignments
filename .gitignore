@@ -2,3 +2,7 @@
 __pycache__/
 .pytest_cache/
 *.pyc
+
+# local secrets / notes — never commit
+jenkins-admin.local.md
+*.local.md
