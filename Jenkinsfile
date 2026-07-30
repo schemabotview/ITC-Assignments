@@ -13,7 +13,7 @@ pipeline {
 
     environment {
         CLOUDERA_HOST = 'ec2-user@13.41.167.97'
-        SSH_KEY       = '/var/lib/jenkins/.ssh/id_rsa'
+        SSH_KEY       = '/var/jenkins_home/.ssh/id_rsa'
         SPARK_SCRIPTS = '/opt/spark-jobs'
     }
 
