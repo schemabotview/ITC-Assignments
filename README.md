@@ -5,7 +5,7 @@ A `git push` to `main` triggers Jenkins, which runs a Spark job on the Cloudera 
 ## Sample modifications for jenksin webhook
 
 ## 
-### just for checking
+### just for checking the code
 ```
 git push (main)
    │  GitHub webhook -> http://13.42.152.118:8080/github-webhook/
