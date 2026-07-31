@@ -15,6 +15,8 @@ Jenkins pipeline (ITC-Assignments)
    ├── Copy src/transformation.py -> Cloudera /tmp   (scp)
    └── spark-submit --master yarn (Java 11)          -> runs on YARN
 ```
+## Noice
+
 
 ## Files
 - `Jenkinsfile` — declarative pipeline (checkout -> scp -> spark-submit).
