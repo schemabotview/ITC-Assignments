@@ -6,7 +6,7 @@ logic; keeping them here lets Jenkins run pytest against them on every push.
 """
 from pyspark.sql import functions as F
 
-
+# MY CHANGE
 def remove_duplicates(df):
     """Drop duplicate transactions by transaction_id."""
     return df.dropDuplicates(["transaction_id"])
