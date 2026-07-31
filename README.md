@@ -15,13 +15,18 @@ Jenkins pipeline (ITC-Assignments)
    ├── Copy src/transformation.py -> Cloudera /tmp   (scp)
    └── spark-submit --master yarn (Java 11)          -> runs on YARN
 ```
+## Noice
+
+## sayed here
+
+
 
 ## Files
 - `Jenkinsfile` — declarative pipeline (checkout -> scp -> spark-submit).
 - `src/transformation.py` — sample Spark job; `filter_experienced()` keeps experience > threshold.
 - `tests/test_transformation.py` — pytest unit tests for `filter_experienced` (run locally in a venv).
 - `conftest.py` — puts repo root on `sys.path` and pins `PYSPARK_PYTHON` to the test interpreter.
-
+## Sreeni Push - check
 ## Run tests locally
 ```bash
 python3.11 -m venv .venv && . .venv/bin/activate
