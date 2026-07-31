@@ -18,6 +18,9 @@ Jenkins pipeline (ITC-Assignments)
 ## Noice
 
 
+##just for fun 
+##hghgjhjhkihjkjj
+#tgfgh
 ## Files
 - `Jenkinsfile` — declarative pipeline (checkout -> scp -> spark-submit).
 - `src/transformation.py` — sample Spark job; `filter_experienced()` keeps experience > threshold.
